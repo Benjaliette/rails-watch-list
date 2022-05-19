@@ -1,0 +1,16 @@
+<h2><%= @list.name %></h2>
+
+<ul>
+  <% @list.movies.each do |movie| %>
+    <li>
+      <%= movie.title %>
+      <%= image_tag movie.poster_url, width: "100px" %>
+      <% bookmark_id = @bookmarks.find { |bookmark| bookmark.movie_id == movie.id } %>
+      <%= link_to "Delete", bookmark_path(bookmark_id), method: :delete, data: { confirm: "Sure?" } %>
+    </li>
+  <% end %>
+</ul>
+
+
+
+<%= link_to "Add a movie", new_list_bookmark_path(@list) %>

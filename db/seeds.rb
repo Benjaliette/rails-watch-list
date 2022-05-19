@@ -1,5 +1,6 @@
 require 'open-uri'
 require 'json'
+require 'faker'
 
 puts "Deleted all instances !"
 
@@ -23,3 +24,9 @@ movies["results"].each do |movie|
 end
 
 puts "Added"
+
+puts "Created 10 lists"
+
+10.times do
+  List.create(name: Faker::Movie.quote)
+end
