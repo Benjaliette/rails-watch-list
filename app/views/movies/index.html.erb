@@ -1,0 +1,10 @@
+<h1>Movies available:</h1>
+
+<ul>
+  <% @movies.each do |movie| %>
+    <li>
+      <%= movie.title %>
+      <%= image_tag movie.poster_url, width: "100px" %>
+    </li>
+  <% end %>
+</ul>
