@@ -1,9 +1,15 @@
-<h1>My Lists:</h1>
+<%= render "partials/banner" %>
 
-<ul>
-  <% @lists.each do |list| %>
-    <li><%= link_to list.name, list_path(list) %></li>
-  <% end %>
-</ul>
+<div class="container">
+  <div class="row">
+    <% @lists.each do |list| %>
+      <div class="col-4">
+        <div class="card-category">
+          <%= link_to list.name, list_path(list) %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
 
 <%= link_to "Add a list", new_list_path %>
