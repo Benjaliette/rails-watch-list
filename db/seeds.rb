@@ -4,9 +4,11 @@ require 'faker'
 
 puts "Deleted all instances !"
 
-Bookmark.destroy_all
-Movie.destroy_all
-List.destroy_all
+if Rails.env.development
+  Bookmark.destroy_all
+  Movie.destroy_all
+  List.destroy_all
+end
 
 puts "Deleted!"
 
