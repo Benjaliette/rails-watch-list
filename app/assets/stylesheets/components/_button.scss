@@ -1,0 +1,49 @@
+.add-button {
+  background-color: $second-font-for-background;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    color: $font-for-background;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 1px solid white;
+  transform: rotate(45deg);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+.btn-gradient {
+  color: rgb(9, 7, 29);
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: bold;
+  background: linear-gradient($font-for-background, orange);
+  transition: background 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(yellow, $font-for-background);
+}

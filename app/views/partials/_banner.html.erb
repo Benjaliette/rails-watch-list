@@ -1,7 +1,10 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(<%= @list ? cl_image_path(@list.photo&.key) : image_url('banner-image.jpg') %>);">
   <div class="container">
-    <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
-    <p>Change your life and learn to code at one of our campuses around the world.</p>
-    <a class="btn btn-flat" href="#">Apply now</a>
+    <% if @list %>
+      <h1><%= @list.name %></h1>
+    <% else %>
+      <h1>Welcome</h1><br>
+      <h1>to Watch List!</h1>
+    <% end %>
   </div>
 </div>
