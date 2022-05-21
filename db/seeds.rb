@@ -14,31 +14,31 @@ puts 'Deleted!'
 
 puts 'Creating lists'
 puts "1st list 'Thriller'"
-thriller_photo = URI.open('https://res.cloudinary.com/dxcrr7aon/image/upload/v1653040665/dostymmxma9xeomlz1uu.jpg')
+thriller_photo = URI.open('https://res.cloudinary.com/dxcrr7aon/image/upload/v1653151306/zy2xhlqlirhuz2ryzwg6.jpg')
 thriller = List.new(name: 'Thriller')
 thriller.photo.attach(io: thriller_photo, filename: 'thriller.jpg', content_type: 'image/jpg')
 thriller.save
 
 puts "2st list 'Comedy'"
-comedy_photo = URI.open('https://res.cloudinary.com/dxcrr7aon/image/upload/v1653040586/ubykbsfdzyepgufdnkhw.jpg')
+comedy_photo = URI.open('https://res.cloudinary.com/dxcrr7aon/image/upload/v1653151379/xcxvsjenrnupgabchwvm.jpg')
 comedy = List.new(name: 'Comedy')
 comedy.photo.attach(io: comedy_photo, filename: 'comedy.jpg', content_type: 'image/jpg')
 comedy.save
 
 puts "3st list 'Drama'"
-drama_photo = URI.open('https://res.cloudinary.com/dxcrr7aon/image/upload/v1653040611/xk5raribc6ioulnphwvy.jpg')
+drama_photo = URI.open('https://res.cloudinary.com/dxcrr7aon/image/upload/v1653151392/q5ahxcktqt6zwxn0ggdd.jpg')
 drama = List.new(name: 'Drama')
 drama.photo.attach(io: drama_photo, filename: 'drama.jpg', content_type: 'image/jpg')
 drama.save
 
 puts "4st list 'Musical'"
-musical_photo = URI.open('https://res.cloudinary.com/dxcrr7aon/image/upload/v1653040603/cqilwsxhjk7nrojt585u.jpg')
+musical_photo = URI.open('https://res.cloudinary.com/dxcrr7aon/image/upload/v1653151433/q0rz790ix7t4fhwqtnxn.jpg')
 musical = List.new(name: 'Musical')
 musical.photo.attach(io: musical_photo, filename: 'musical.jpg', content_type: 'image/jpg')
 musical.save
 
 puts "5st list 'Cartoon'"
-cartoon_photo = URI.open('https://res.cloudinary.com/dxcrr7aon/image/upload/v1653040593/d7aw1lqlnemjsggfwrd2.jpg')
+cartoon_photo = URI.open('https://res.cloudinary.com/dxcrr7aon/image/upload/v1653151443/pvlwvexbuu98juh6griz.jpg')
 cartoon = List.new(name: 'Cartoon')
 cartoon.photo.attach(io: cartoon_photo, filename: 'cartoon.jpg', content_type: 'image/jpg')
 cartoon.save

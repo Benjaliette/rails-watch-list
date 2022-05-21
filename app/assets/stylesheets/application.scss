@@ -13,7 +13,7 @@
 @import "pages/index";
 
 body {
-  background-color: $background;
+  background-image: url("background.svg");
   font-family: $body-font;
   color: $font-for-background
 }
@@ -21,4 +21,8 @@ body {
 h1, h2, h3, h4 {
   font-family: $headers-font;
   color: $second-font-for-background;
+}
+
+.bg-strongblue {
+  background-color: #14213d;
 }

@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
   a {
     color: $font-for-background;
     text-decoration: none;
@@ -46,4 +47,12 @@
 
 .btn-gradient:hover {
   background: linear-gradient(yellow, $font-for-background);
+}
+
+.btn-nav-add {
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid $font-for-background;
+  padding: 0 10px;
 }
