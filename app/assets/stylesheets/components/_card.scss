@@ -71,6 +71,31 @@
   }
 }
 
+@media (max-width: 576px) {
+  .card-category {
+    background-size: cover;
+    background-position: center;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 1px solid #fca311;
+    filter: grayscale(100%);
+    &:hover {
+      filter: none;
+      height: 190px;
+      transition-duration: 0.2s;
+      color: white;
+    }
+  }
+ }
+
 .card-link {
   text-decoration: none;
   color: $font-for-background;

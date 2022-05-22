@@ -1,6 +1,8 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
+  static targets = ["watchlist"]
+
   connect() {
 
   }
@@ -11,6 +13,15 @@ export default class extends Controller {
     }
     else {
       this.element.classList.remove("bg-strongblue")
+    }
+  }
+
+  changeNavbarComponents() {
+    if (window.screen.width <= 576) {
+      this.watchlistTarget.innerText = ""
+    }
+    else {
+      this.watchlistTarget.innerText = "WATCHLIST"
     }
   }
 }
